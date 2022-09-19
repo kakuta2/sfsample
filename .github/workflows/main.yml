@@ -37,6 +37,10 @@ jobs:
         run: sfdx force:config:set defaultdevhubusername=kakuchi77@ws20220823.jp
 
       # Runs a single command using the runners shell
+      - name: PWD
+        run: echo `pwd`
+        
+      # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
 
